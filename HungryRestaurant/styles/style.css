@@ -4,8 +4,8 @@
   margin: 0;
   padding: 0;
 }
-.btn-position{
-  text-align:center;
+.btn-position {
+  text-align: center;
 }
 .btn-style {
   padding: 16px 18px 16px 18px;
@@ -18,7 +18,7 @@
   text-align: center;
   border-radius: 8px;
   background: rgb(82, 195, 3);
-  border:none;
+  border: none;
 }
 #hero {
   height: 643px;
@@ -47,7 +47,7 @@
   letter-spacing: 0%;
   text-align: center;
   opacity: 0.8;
-  margin-bottom:8px;
+  margin-bottom: 8px;
 }
 #hero .hero-content .main-header {
   color: rgb(255, 255, 255);
@@ -57,7 +57,7 @@
   line-height: 58px;
   letter-spacing: 0%;
   text-align: center;
-  margin-bottom:10px;
+  margin-bottom: 10px;
 }
 #hero .hero-content .food-description {
   color: rgb(255, 255, 255);
@@ -68,6 +68,24 @@
   letter-spacing: 0%;
   text-align: center;
   opacity: 0.7;
-  margin-bottom:18px;
+  margin-bottom: 18px;
 }
-
+#card-box .container .card-title .title-style {
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  opacity: 0.6;
+}
+#card-box .container .card-title .card-description {
+  color: rgb(16, 16, 16);
+  font-family: Work Sans;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 54px;
+  letter-spacing: 0%;
+  text-align: center;
+}
