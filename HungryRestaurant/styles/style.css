@@ -27,5 +27,13 @@ line-height: 38px;
 letter-spacing: 0%;
 text-align: center;
 opacity: 0.8;
-
+}
+#hero .hero-content .main-header{
+color: rgb(255, 255, 255);
+font-family: Work Sans;
+font-size: 44px;
+font-weight: 700;
+line-height: 58px;
+letter-spacing: 0%;
+text-align: center;
 }
