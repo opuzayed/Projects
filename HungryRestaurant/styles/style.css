@@ -7,8 +7,25 @@
 #hero {
   height: 643px;
   background-image: linear-gradient(0deg, rgb(9, 9, 9) 3.482%,rgba(16, 16, 16, 0) 101.632%),url("../assets/hero-bg.png");
-  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero .hero-content{
+  width: 726px;
+  
+}
+#hero .hero-content .subheader{
+color: rgb(255, 255, 255);
+font-family: Work Sans;
+font-size: 16px;
+font-weight: 600;
+line-height: 38px;
+letter-spacing: 0%;
+text-align: center;
+opacity: 0.8;
+
 }
