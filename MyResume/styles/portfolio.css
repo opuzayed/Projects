@@ -5,8 +5,15 @@
   font-variation-settings:
     "wdth" 100;
 }
-
+/* shared styles */
+.text-primary{
+    color: #FD6E0A;
+}
 /* nav styles start */
 nav{
     display: flex;
+}
+.nav-titlename{
+    font-weight: 800;
+    font-size: 45px;
 }
