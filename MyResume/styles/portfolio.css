@@ -124,3 +124,6 @@ main {
   display: flex;
   gap: 24px;
 }
+.skill{
+  padding: 30px;
+}
