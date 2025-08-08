@@ -11,6 +11,9 @@
 .text-primary {
   color: #fd6e0a;
 }
+.text-center{
+  text-align: center;
+}
 .dark-2 {
   color: #474747;
 }
@@ -115,4 +118,9 @@ main {
   font-size: 20px;
   color: #474747;
   margin: 0;
+}
+/* skill section style */
+.skills-container{
+  display: flex;
+  gap: 24px;
 }
