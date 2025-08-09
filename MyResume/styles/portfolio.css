@@ -157,4 +157,9 @@ main section{
 /* footer style start */
 footer{
   padding: 130px 230px;
+  display: flex;
+  gap: 117px;
+}
+.footer-column{
+  width:50%;
 }
