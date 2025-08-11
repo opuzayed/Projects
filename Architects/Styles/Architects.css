@@ -85,3 +85,9 @@
     height: auto;
     max-width: 1440px;
 }
+/* responsive style start */
+@media screen and (max-width : 576px) {
+    .navbar, .nav-links{
+        flex-direction: column;
+    } 
+}
