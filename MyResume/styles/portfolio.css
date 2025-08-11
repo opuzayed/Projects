@@ -177,7 +177,7 @@ footer input[type='text'], footer input[type='email'], footer textarea{
 
 /* responsive start */
 @media screen and (max-width: 576px){
-  .skills-container{
+  .skills-container, .resume-container{
     flex-direction: column;
   }
 }
