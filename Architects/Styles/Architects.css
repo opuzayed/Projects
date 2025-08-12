@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
@@ -7,159 +7,245 @@
 }
 /* shared styles */
 
-.display-flex{
-    display: flex;
+.display-flex {
+  display: flex;
 }
 
 /* dark-02 */
-.text-gray{
-    color: #424242;
+.text-gray {
+  color: #424242;
 }
 
 /* dark 03 */
-.text-light-gray{
-    color: #727272;
+.text-light-gray {
+  color: #727272;
 }
-.bg-light{
-    background-color: rgba(255, 144, 14, 0.1);
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
 }
 
-.btn-primary{
-    background-color: #FF900E;
-    color: white;
-    font-weight: 600;
-    font-size: 1.25rem;
-    padding: 20px 25px;
-    border-radius: 8px;
-    border: none;
+.btn-primary {
+  background-color: #ff900e;
+  color: white;
+  font-weight: 600;
+  font-size: 1.25rem;
+  padding: 20px 25px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
 }
-main{
-    max-width: 1440px;
-    margin: 0 auto;
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+main > section {
+  margin-top: 130px;
+}
+.avg-margin{
+    margin-bottom: 32px;
 }
 
 /* header styles */
 
-
 /* navbar related styles */
-.navbar{
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  justify-content: space-between;
+  align-items: center;
 }
-.brand{
-    font-weight: 700;
-    font-size: 3rem;
+.brand {
+  font-weight: 700;
+  font-size: 3rem;
 }
-.nav-item{
-    list-style: none;
-    margin-right: 40px;
+.nav-item {
+  list-style: none;
+  margin-right: 40px;
 }
-.nav-link{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 18px;
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 18px;
 }
-.navbar, .banner{
-    max-width: 1920px;
-    margin: 0 auto;
-    padding: 0 100px;
+.navbar,
+.banner {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 100px;
 }
 /* banner-styles start */
-.banner-content{
-    width: 860px;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 50px;
+.banner-content {
+  width: 860px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
 }
-.banner-title{
+.banner-title {
+  font-weight: 700;
+  font-size: 4rem;
+}
+.banner-bottom {
+  margin-bottom: 2rem;
+}
+.title-margin {
+  margin-bottom: 0px;
+}
+.title-second {
+  margin-top: 2px;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  max-width: 1440px;
+}
+
+/* teams and feature styles start */
+.teams {
+  align-items: center;
+}
+.teams-image-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.our-features {
+  margin-left: 73px;
+  max-width: 537px;
+}
+.feature-title {
+  font-size: 2.8rem;
+}
+#quick-list{
+    font-weight: 500;
+}
+#our{
+    color:#131313;
     font-weight: 700;
-    font-size: 4rem;
 }
-.banner-bottom{
-    margin-bottom: 2rem;
+#features{
+    color: #FF900E;
+    font-weight: 700;
 }
-.title-margin{
-    margin-bottom: 0px;
-}
-.title-second{
-    margin-top: 2px;
-}
-.banner img{
-    width: 100%;
-    height: auto;
-    max-width: 1440px;
-}
+
 /* responsive style start */
 /* Tablet (≤992px) */
 @media screen and (max-width: 992px) {
-    .navbar, .nav-links {
-        flex-direction: column;
-        align-items: center;
-    }
-    .nav-item {
-        margin: 10px 0;
-    }
-    .banner-content {
-        width: 100%;
-        padding: 0 20px;
-    }
-    .banner-title {
-        font-size: 3rem;
-    }
+  .navbar,
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav-item {
+    margin: 10px 0;
+  }
+  .banner-content {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .banner-title {
+    font-size: 3rem;
+  }
 }
 
 /* Mobile (≤576px) */
 /* Mobile (≤576px) */
 @media screen and (max-width: 576px) {
-    /* Navbar adjustments */
-    .navbar {
-        flex-direction: column;
-        padding: 15px;
-    }
-    .nav-links {
-        flex-direction: column;
-        align-items: center;
-        gap: 12px;
-        margin-top: 10px;
-    }
-    .brand {
-        font-size: 1.8rem;
-        text-align: center;
-    }
+  /* Navbar adjustments */
+  .navbar {
+    flex-direction: column;
+    padding: 15px;
+  }
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+  }
+  .brand {
+    font-size: 1.8rem;
+    text-align: center;
+  }
 
-    /* Banner adjustments */
-    .banner {
-        padding: 0 15px;
-        flex-direction: column;
-    }
-    .banner-content {
-        width: 90%;
-        max-width: 100%;
-        padding: 0 10px;
-        margin-bottom: 20px;
-    }
-    .banner-title {
-        font-size: 2rem;
-        line-height: 1.2;
-    }
-    .banner-description {
-        font-size: 0.95rem;
-        line-height: 1.5;
-    }
+  /* Banner adjustments */
+  .banner {
+    padding: 0 15px;
+    flex-direction: column;
+  }
+  .banner-content {
+    width: 90%;
+    max-width: 100%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+  }
+  .banner-title {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+  .banner-description {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
 
-    /* Button */
-    .btn-primary {
-        font-size: 1rem;
-        padding: 12px 18px;
-    }
+  /* Button */
+  .btn-primary {
+    font-size: 1rem;
+    padding: 12px 18px;
+  }
 
-    /* Image scaling */
-    .banner img {
-        width: 100%;
-        height: auto;
-        max-width: 100%;
-        object-fit: cover;
-        border-radius: 6px;
-    }
+  /* Image scaling */
+  .banner img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+  }
 }
+/* teams section responsive start */
+
+/* ===============================
+  Extra Small Devices (xs) <576px
+   =============================== */
+@media (max-width: 575.98px) {
+  .teams {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+
+  .teams-image-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .teams-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .our-features {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .feature-title {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .text-light-gray {
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+}
+
 
