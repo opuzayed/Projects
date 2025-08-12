@@ -41,8 +41,8 @@ main {
 main > section {
   margin-top: 130px;
 }
-.avg-margin{
-    margin-bottom: 32px;
+.avg-margin {
+  margin-bottom: 32px;
 }
 
 /* header styles */
@@ -114,16 +114,16 @@ main > section {
 .feature-title {
   font-size: 2.8rem;
 }
-#quick-list{
-    font-weight: 500;
+#quick-list {
+  font-weight: 500;
 }
-#our{
-    color:#131313;
-    font-weight: 700;
+#our {
+  color: #131313;
+  font-weight: 700;
 }
-#features{
-    color: #FF900E;
-    font-weight: 700;
+#features {
+  color: #ff900e;
+  font-weight: 700;
 }
 
 /* responsive style start */
@@ -247,5 +247,38 @@ main > section {
     font-size: 1rem;
   }
 }
+/* ===============================
+   Small Devices (sm) ≥576px
+   =============================== */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .teams {
+    flex-direction: column;
+  }
 
+  .teams-image-container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+  }
+  .teams-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .our-features {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .feature-title {
+    font-size: 1.8rem;
+  }
+
+  .btn-primary {
+    width: auto;
+    padding: 10px 20px;
+  }
+}
 
