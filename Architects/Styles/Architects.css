@@ -324,4 +324,72 @@ main > section {
     width: auto;
   }
 }
+/* ===============================
+   ✅ Large Devices (lg) ≥992px
+   =============================== */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  main {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
 
+  .teams {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+  }
+
+  .teams-image-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    width: 50%;
+  }
+
+  .teams-image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  .our-features {
+    width: 50%;
+    max-width: 500px;
+    text-align: left;
+  }
+
+  .feature-title {
+    font-size: 2.8rem;
+    line-height: 1.3;
+    font-weight: 700;
+  }
+
+  #quick-list {
+    font-size: 2rem;
+  }
+
+  #our {
+    color: #131313;
+    font-weight: 700;
+  }
+
+  #features {
+    color: #ff900e;
+    font-weight: 700;
+  }
+
+  .text-light-gray {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  .btn-primary {
+    padding: 14px 28px;
+    font-size: 1.1rem;
+    width: auto;
+  }
+}
