@@ -86,8 +86,76 @@
     max-width: 1440px;
 }
 /* responsive style start */
-@media screen and (max-width : 576px) {
-    .navbar, .nav-links{
+/* Tablet (≤992px) */
+@media screen and (max-width: 992px) {
+    .navbar, .nav-links {
         flex-direction: column;
-    } 
+        align-items: center;
+    }
+    .nav-item {
+        margin: 10px 0;
+    }
+    .banner-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+    .banner-title {
+        font-size: 3rem;
+    }
 }
+
+/* Mobile (≤576px) */
+/* Mobile (≤576px) */
+@media screen and (max-width: 576px) {
+    /* Navbar adjustments */
+    .navbar {
+        flex-direction: column;
+        padding: 15px;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        margin-top: 10px;
+    }
+    .brand {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    /* Banner adjustments */
+    .banner {
+        padding: 0 15px;
+        flex-direction: column;
+    }
+    .banner-content {
+        width: 90%;
+        max-width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .banner-title {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+    .banner-description {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    /* Button */
+    .btn-primary {
+        font-size: 1rem;
+        padding: 12px 18px;
+    }
+
+    /* Image scaling */
+    .banner img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+}
+
