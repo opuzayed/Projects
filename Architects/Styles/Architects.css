@@ -634,8 +634,8 @@ main > section {
   }
 
   #left-space-title {
-    padding-left: 0;
-  }
+  padding-left: 20px;
+}
 
   .features-description {
     font-size: 1rem;
