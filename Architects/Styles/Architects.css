@@ -96,7 +96,6 @@ main > section {
   height: auto;
   max-width: 1440px;
 }
-
 /* teams and feature styles start */
 .teams {
   align-items: center;
@@ -106,7 +105,6 @@ main > section {
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
-
 .our-features {
   margin-left: 73px;
   max-width: 537px;
@@ -125,8 +123,84 @@ main > section {
   color: #ff900e;
   font-weight: 700;
 }
+/* teams section style end */
+/* feature section style start */
+.features-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+}
+/*— Flex Container with exact 146px gap —*/
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0 146px;
+}
+
+/*— Left Column: Text Content —*/
+.features-list {
+  flex: 1 1 calc((100% - 146px) / 2); /* Ensures balanced width on both columns */
+}
+#left-space-title {
+  padding-left: 20px;
+}
+.features-title {
+  position: relative;
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #131313;
+}
+
+.features-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 5px;
+  height: 2em;
+  background-color: #ff8c00;
+}
+
+.features-description {
+  color: #555;
+  margin-bottom: 30px;
+}
+.feature-card {
+  background: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/*— Right Column: Image with Badge —*/
+.features-image-wrap {
+  position: relative;
+  flex: 1 1 calc((100% - 146px) / 2);
+  text-align: center;
+}
+.features-image-wrap img {
+  width: 100%;
+  height: 910px;
+  border-radius: 8px;
+}
+
+/*— Badge Overlay: Bottom-Left —*/
+.experience-badge {
+  position: absolute;
+  bottom: -70px;
+  left: -100px;
+  z-index: 10;
+}
+.experience-badge img {
+  width: 200px;
+  height: auto;
+}
+/* feature section style end */
 
 /* responsive style start */
+/* banner section responsive start */
 /* Tablet (≤992px) */
 @media screen and (max-width: 992px) {
   .navbar,
@@ -200,6 +274,7 @@ main > section {
     border-radius: 6px;
   }
 }
+/* banner section responsive done */
 /* teams section responsive start */
 
 /* ===============================
@@ -393,3 +468,76 @@ main > section {
     width: auto;
   }
 }
+/* features section responsive start */
+/* Extra‑small devices: under 576px */
+@media (max-width: 575.98px) {
+  .features-section {
+    padding: 20px 14px;
+  }
+
+  .features-container {
+    display: flex;
+    flex-direction: column; /* stack content */
+    gap: 12px 0;
+    align-items: center; /* center blocks horizontally */
+    text-align: center;
+  }
+
+  .features-list,
+  .features-image-wrap {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .features-list {
+    margin-right: 20px;
+  }
+
+  .features-title {
+    font-size: 1.3rem;
+    padding-left: 0;
+  }
+
+  #left-space-title {
+    padding-left: 0;
+  }
+
+  .features-description {
+    font-size: 0.88rem;
+  }
+
+  .feature-card {
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    text-align: center;
+    width: 100%; /* make sure it doesn’t shrink smaller than container */
+  }
+  .features-image-wrap {
+    position: relative;
+    /* flex: 1 1 calc((100% - 146px) / 2); */
+    /* text-align: center; */
+  }
+
+  .features-image-wrap img {
+    width: 100%;
+    height: auto;
+    /* display: block; */
+    margin: 0 auto;
+  }
+
+  .experience-badge {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-align: center;
+    width: auto;
+    z-index: 10;
+  }
+  .experience-badge img {
+    width: 100px;
+    height: auto;
+  }
+}
+/* features section responsive end */
