@@ -838,9 +838,131 @@ main > section {
   .fact-description {
     font-size: 15px;
     padding: 0 12px;
-    /* margin-bottom: 12px; */
+    
   }
 }
+/* medium device responsive */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .facts-section {
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+  }
 
+  .facts-title {
+    font-size: 28px;
+    margin-bottom: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .facts-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px; /* More room between cards */
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .fact-card {
+    width: 40%;             /* 3 cards per row if space allows */
+    max-width: 320px;
+    padding: 24px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+  }
+
+  .fact-icon {
+    width: 56px;
+    height: 56px;
+    margin: 20px auto;
+    display: block;
+  }
+
+  .fact-number {
+    font-size: 2.2rem;
+    margin: 10px 0 6px;
+  }
+
+  .fact-name {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .fact-description {
+    font-size: 15px;
+    padding: 0 16px;
+    margin-bottom: 8px;
+  }
+}
+/* large device responsive */
+
+@media (min-width: 992px) {
+  .facts-section {
+    padding: 64px 48px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .facts-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .facts-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .fact-card {
+    width: 20%;
+    max-width: 300px;
+    padding: 28px;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .fact-icon {
+    width: 64px;
+    height: 64px;
+    margin: 24px auto;
+    display: block;
+  }
+
+  .fact-number {
+    font-size: 2.4rem;
+    margin: 10px 0 8px;
+  }
+
+  .fact-name {
+    font-size: 1.25rem;
+    margin: 0;
+  }
+
+  .fact-description {
+    font-size: 16px;
+    padding: 0 20px;
+    margin-bottom: 8px;
+  }
+}
 
 /* some facts section responsive end */
