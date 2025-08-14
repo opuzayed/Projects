@@ -240,6 +240,15 @@ main > section {
   align-items: center;
 }
 /* some facts section style end */
+/* our-sponsor section style start */
+.sponsor-info{
+  max-width: 542px;
+  margin: 50px auto;
+}
+.title-gap{
+  margin-bottom: 24px;
+}
+/* our-sponsor section style end */
 
 /* responsive style start */
 /* banner section responsive start */
