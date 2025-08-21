@@ -28,50 +28,62 @@
   </head>
   <body>
     <!-- main content -->
-    <main class="max-w-screen-xl mx-auto px-16 lg:px-24">
-      <!-- header start -->
-      <header class="flex pt-16 mb-16">
-        <!-- text-content -->
-        <div>
-          <h1 class="text-5xl md:text-7xl">
-            It's good <br />
-            tea time at The <br />
-            Tea House
-          </h1>
-          <br />
-          <p class="text-gray-500 w-3/4">
-            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
-            Your Taste Buds.
-          </p>
-          <br />
-          <button
-            class="bg-linear-to-r from-orange-500 to-red-500 px-4 py-3 rounded-lg text-white font-bold"
-          >
-            Explore More
-            <i class="fa-solid fa-arrow-right pl-2 -rotate-45 text-xl"></i>
-          </button>
-        </div>
-        <!-- image-content -->
+   <main class="max-w-screen-xl mx-auto px-4 sm:px-8 lg:px-28">
+  <!-- header start -->
+  <header class="flex flex-col lg:flex-row items-center gap-8 pt-10 mb-20">
+    
+    <!-- text-content -->
+    <div class="text-center lg:text-left lg:flex-1">
+      <h1 class="text-3xl sm:text-5xl lg:text-7xl font-bold leading-tight">
+        It's good <br />
+        tea time at The <br />
+        Tea House
+      </h1>
 
-        <div class="relative">
-          <!-- image -->
-          <div>
-            <img class="w-full" src="images/banner.png" alt="two cups" />
-          </div>
-          <div
-            class="flex items-center bg-white shadow-lg px-2 py-2 md:px-5 lg:py-4 rounded-lg absolute top-28 md:top-80 md:left-20"
-          >
-            <!-- icon -->
-            <div><i class="fa-solid fa-star text-yellow-500 text-2xl"></i></div>
-            <!-- text and rating -->
-            <div class="ml-3">
-              <h2 class="lg:text-2xl font-bold">5.00</h2>
-              <p class="text-gray-500">Trust Pilot Ratings</p>
-            </div>
-          </div>
+      <p class="mt-4 text-gray-500 max-w-md mx-auto lg:mx-0">
+        Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+        Your Taste Buds.
+      </p>
+
+      <button
+        class="mt-6 bg-gradient-to-r from-orange-500 to-red-500 px-6 py-3 rounded-lg text-white font-bold inline-flex items-center gap-2"
+      >
+        Explore More
+        <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
+      </button>
+    </div>
+
+    <!-- image-content -->
+    <div class="relative lg:flex-1 mt-8 lg:mt-0">
+      <!-- cup image -->
+      <img
+        class="w-full max-w-sm mx-auto lg:max-w-full"
+        src="./images/banner.png"
+        alt="two cups"
+      />
+
+      <!-- rating card: further left & slightly lower -->
+      <div
+        class="absolute z-10
+               left-[34%] -translate-x-1/2
+               bottom-[3%] lg:bottom-[4%]
+               flex items-center gap-3
+               bg-white/95 backdrop-blur-sm shadow-lg rounded-xl
+               px-3 py-2 sm:px-4 sm:py-3"
+      >
+        <i class="fa-solid fa-star text-yellow-500 text-xl sm:text-2xl"></i>
+        <div class="text-left">
+          <h2 class="text-base sm:text-lg lg:text-2xl font-bold leading-none">5.00</h2>
+          <p class="text-gray-500 text-xs sm:text-sm lg:text-base leading-tight">
+            Trust Pilot Ratings
+          </p>
         </div>
-      </header>
-      <!-- header end -->
-    </main>
+      </div>
+    </div>
+  </header>
+  <!-- header end -->
+</main>
+
+
   </body>
 </html>
